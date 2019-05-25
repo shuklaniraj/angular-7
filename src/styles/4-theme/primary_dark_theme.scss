@@ -1,0 +1,141 @@
+@import '~@angular/material/theming';
+// primary/dark color palatte for cgm
+$md-cgmprimary:(
+  50 : #e7e7e8,
+  100 : #c3c4c5,
+  200 : #9b9c9f,
+  300 : #727479,
+  400 : #54575c,
+  500 : #36393f,
+  600 : #303339,
+  700 : #292c31,
+  800 : #222429,
+  900 : #16171b,
+  950 : #2F3136, // added new value for sidenav
+  A100 : #6a8bf8,
+  A200 : #3965f6,
+  A400 : #003ffc,
+  A700 : #0039e2,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    950 : #ffffff,
+    A100 : #000000,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$md-mcgpalettesecondary: (
+    50 : #e8f4ee,
+    100 : #c5e3d5,
+    200 : #9ed1ba,
+    300 : #77bf9e,
+    400 : #59b189,
+    500 : #3ca374,
+    600 : #369b6c,
+    700 : #2e9161,
+    800 : #278857,
+    900 : #1a7744,
+    A100 : #b1ffd2,
+    A200 : #7effb4,
+    A400 : #4bff97,
+    A700 : #31ff88,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-mcgpalettewarn: (
+    50 : #f6e6e4,
+    100 : #e9c1bc,
+    200 : #db988f,
+    300 : #cd6e62,
+    400 : #c24f41,
+    500 : #b7301f,
+    600 : #b02b1b,
+    700 : #a72417,
+    800 : #9f1e12,
+    900 : #90130a,
+    A100 : #ffc1be,
+    A200 : #ff918b,
+    A400 : #ff6058,
+    A700 : #ff483f,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+// Background palette for dark themes.
+$mat-dark-theme-background: (
+  status-bar: black,
+  app-bar:    map_get($mat-grey, 900),
+  background: map_get($md-cgmprimary, 500),
+  hover:      rgba(white, 0.04), // TODO(kara): check style with Material Design UX
+  card:       map_get($mat-grey, 800),
+  dialog:     map_get($md-cgmprimary, 950),
+  disabled-button: rgba(white, 0.12),
+  raised-button: map-get($mat-grey, 800),
+  focused-button: $light-focused,
+  selected-button: map_get($mat-grey, 900),
+  selected-disabled-button: map_get($mat-grey, 800),
+  disabled-button-toggle: black,
+  unselected-chip: map_get($mat-grey, 700),
+  disabled-list-option: black,
+);
+
+// Foreground palette for dark themes.
+$mat-dark-theme-foreground: (
+  base:              white,
+  divider:           $light-dividers,
+  dividers:          $light-dividers,
+  disabled:          $light-disabled-text,
+  disabled-button:   rgba(white, 0.3),
+  disabled-text:     $light-disabled-text,
+  elevation:         black,
+  hint-text:         $light-disabled-text,
+  secondary-text:    $light-secondary-text,
+  icon:              white,
+  icons:             white,
+  text:              white,
+  slider-min:        white,
+  slider-off:        rgba(white, 0.3),
+  slider-off-active: rgba(white, 0.3),
+);
+
+// primary/dark color palatte for cgm ends

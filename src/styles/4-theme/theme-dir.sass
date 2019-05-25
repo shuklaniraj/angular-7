@@ -1,0 +1,19 @@
+@import ./primary_dark_theme
+@import ./light_theme
+@import '~@angular/material/theming'
+@include mat-core()
+
+$primary: mat-palette($md-cgmprimary)
+$accent: mat-palette($md-mcgpalettesecondary, A200, A100, A400)
+$warn: mat-palette($md-mcgpalettewarn)
+$theme: mat-light-theme($primary, $accent, $warn)
+$theme-dark: mat-dark-theme($primary, $accent, $warn)
+
+.indigo-pink
+  @include angular-material-theme($theme)
+
+
+.indigo-pink-dark
+  @include angular-material-theme($theme-dark)
+
+
